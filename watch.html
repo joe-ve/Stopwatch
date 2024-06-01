@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Racing Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/stopwatch.png">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <div class="stopwatch">
+            <div id="display">00:00:00.000</div>
+            <div class="buttons">
+                <button id="startStopBtn" onclick="startStop()">Start</button>
+                <button id="lapBtn" onclick="recordLap()" disabled>Lap</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+            </div>
+            <div id="laps"></div>
+        </div>
+    </div>
+</body>
+</html>
